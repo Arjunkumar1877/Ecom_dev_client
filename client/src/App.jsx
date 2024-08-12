@@ -1,19 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
+import { useState } from 'react';
+import './App.css';
+import Login from './pages/Login';
+import Signup from './pages/signup';
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
  <>
+ <Signup/>
  
- <h1>Amal Modesty</h1>
- <h1 className="text-3xl font-bold underline text-red-700" >
-      Hello world! hai testing by arjun
-    </h1>
  </>
   )
 }
