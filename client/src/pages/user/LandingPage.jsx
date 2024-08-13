@@ -10,9 +10,12 @@ import landingPageImage8 from "../../assets/Landing/landingPage8.jpeg";
 import landingPageImage9 from "../../assets/Landing/landingPage9.jpeg";
 import logo from "../../assets/Landing/logo.png";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
+import Header from "../../components/user/Header";
 
 const LandingPage = () => {
   return (
+   <>
+   <Header />
     <div className="flex flex-col gap-8 w-full h-full font-Agatho">
       {/* Hero Section */}
       <div
@@ -70,7 +73,7 @@ const LandingPage = () => {
         <div className="flex flex-col justify-center items-center gap-4 lg:h-[500px] bg-Amal-lightGreen">
           <div className="flex flex-col h-full w-full p-5">
             <div className="flex flex-col relative justify-center items-center  bg-cover bg-center bg-no-repeat h-1/2 sm:h-3/4 md:h-full border border-3 ">
-              <img src={logo} alt="" className="w-[500px] absolute top-0" />
+            <img src={logo} alt="" className="w-[300px] sm:w-[300px] lg:w-[500px] absolute -top-14"/>
               <div className="flex flex-col mt-12 gap-4 p-5 text-center rounded-lg z-20 ">
                 <h1 className="text-lg sm:text-xl md:text-2xl lg:text-5xl uppercase">
                   Explore our latest collections
@@ -149,6 +152,7 @@ const LandingPage = () => {
         <FaChevronRight />
       </div>
     </div>
+   </>
   );
 };
 
