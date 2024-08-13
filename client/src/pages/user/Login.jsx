@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../styles/fonts.css';
+import './../../styles/fonts.css';
 
 function LoginPage() {
 
