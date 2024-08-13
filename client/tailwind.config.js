@@ -11,7 +11,7 @@ export default {
         'Amal-ivory': '#E6DDD8',
     },
     fontFamily: {
-      Agatho: ['Agatho', 'sans-serif'], // Add your custom font here
+      Agatho: ['Agatho'], // Add your custom font here
     },
   },
 },
