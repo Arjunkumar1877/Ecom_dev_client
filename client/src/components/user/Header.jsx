@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import Logo from '../../assets/Header/Amal-01.png'
-import Logo1 from '../../assets/Header/Amal-07.png'
-import LogoSmall from '../../assets/Header/Amal-01.png'
+import Logo from '../../assets/Header/Amal-01.png';
+import Logo1 from '../../assets/Header/Amal-07.png';
+import LogoSmall from '../../assets/Header/Amal-01.png';
 import { HiOutlineXMark, HiBars3 } from "react-icons/hi2";
 import { CiUser, CiSearch, CiShoppingCart, CiHeart } from "react-icons/ci";
 
@@ -11,44 +11,51 @@ const Header = () => {
   return (
     <header className="fixed w-full z-50 top-0">
       {/* First Block: Logo */}
-      <div className="bg-Amal-ivory py-4 hidden md:block">
+      <div className="bg-Amal-ivory py-2 hidden md:block">
         <div className="container mx-auto flex justify-center">
           <img src={Logo} alt="Logo 1" className="h-20" />
         </div>
       </div>
 
       {/* Second Block: Centered Text */}
-      <div className="bg-Amal-green md:bg-white py-2">
+      <div className="bg-Amal-green md:bg-white py-1">
         <div className="container mx-auto text-center">
-          <h1 className="text-md text-white md:text-Amal-green font-Agatho">
-            FREE UK DELIVERY ON ORDERS OVER <span className='text-whitemd:text-Amal-green font-sans'>£</span>100
+          <h1 className="text-sm md:text-md text-white md:text-Amal-green font-Agatho">
+            FREE UK DELIVERY ON ORDERS OVER <span className="text-white md:text-Amal-green font-sans">£</span>100
           </h1>
         </div>
       </div>
 
       {/* Third Block: Logo, Navigation, and Icons */}
-      <div className="bg-Amal-ivory md:bg-Amal-green opacity-90 py-4">
+      <div className="bg-Amal-ivory md:bg-Amal-green-transparent py-4 sticky top-0 z-50">
         <div className="container mx-auto flex items-center justify-between">
-          {/* Left side: Logo and Menu Toggle */}
+          {/* Left Side: Logo and Menu Toggle */}
           <div className="flex items-center space-x-4 md:space-x-0">
             {/* Logo for medium and larger screens */}
-            <img src={Logo1} alt="Logo 1" className="hidden md:h-10 md:block" />
-            
-            {/* Logo for small screens */}
-           
+            <img src={Logo1} alt="Logo 1" className="hidden md:block h-10" />
 
             {/* Menu Toggle (for mobile view) */}
             <button className="md:hidden p-2" onClick={() => setIsOpen(!isOpen)}>
-              {isOpen ? <HiOutlineXMark className="text-2xl text-Amal-green md:text-white" /> : <HiBars3 className="text-2xl text-Amal-green md:text-white" />}
+              {isOpen ? (
+                <HiOutlineXMark className="text-3xl text-Amal-green md:text-white" />
+              ) : (
+                <HiBars3 className="text-3xl text-Amal-green md:text-white" />
+              )}
             </button>
-           
+
+            {/* Search Icon for mobile */}
+            <CiSearch className="text-3xl text-Amal-green md:hidden cursor-pointer" />
           </div>
-<div className='md:hidden py-3 ml-24'>
-          <img src={LogoSmall} alt="Logo Small" className="md:hidden h-20 mx-auto" />
 
-</div>
+          {/* Centered Logo for small screens */}
+          <div className="md:hidden ml-14">
+            <img src={LogoSmall} alt="Logo Small" className="w-20 mx-auto" />
+          </div>
 
-          {/* Navigation items centered */}
+          {/* Search Icon for medium and larger screens */}
+          <CiSearch className="text-3xl hidden md:block text-white cursor-pointer" />
+
+          {/* Navigation items centered for medium and larger screens */}
           <nav className="hidden md:flex flex-1 justify-center">
             <ul className="flex space-x-4">
               <li><a href="#home" className="text-white hover:underline">Home</a></li>
@@ -59,24 +66,16 @@ const Header = () => {
             </ul>
           </nav>
 
-          {/* Right side: Icons */}
-          <div className="flex items-center space-x-4">
-            {/* Search Icon */}
-            <CiSearch className="text-2xl text-Amal-green md:text-white cursor-pointer" />
-            
-            {/* Cart Icon */}
-            <CiShoppingCart className="text-2xl text-Amal-green md:text-white cursor-pointer" />
-            
-            {/* User Icon */}
-            <CiUser className="text-2xl text-Amal-green md:text-white cursor-pointer" />
-            
-            {/* Wishlist Icon */}
-            <CiHeart className="text-2xl text-Amal-green md:text-white cursor-pointer" />
+          {/* Right Side: Icons */}
+          <div className="flex items-center space-x-2 mr-5">
+            <CiHeart className="text-3xl text-Amal-green md:text-white cursor-pointer" />
+            <CiShoppingCart className="text-3xl text-Amal-green md:text-white cursor-pointer" />
+            <CiUser className="text-3xl text-Amal-green md:text-white cursor-pointer" />
           </div>
         </div>
 
         {/* Mobile Menu */}
-        <div className={`md:hidden ${isOpen ? 'block' : 'hidden'} bg-amal-green`}>
+        <div className={`md:hidden ${isOpen ? 'block' : 'hidden'} bg-Amal-green`}>
           <nav className="container mx-auto">
             <ul className="flex flex-col items-center space-y-4 py-4">
               <li><a href="#home" className="text-Amal-green hover:underline">Home</a></li>

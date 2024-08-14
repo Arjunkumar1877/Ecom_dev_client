@@ -29,10 +29,13 @@ const CustomSwiper = ({ datas }) => {
       onSlideChange={() => console.log('slide change')}
    className='w-full' >
       {datas && datas.map((data, i) => (
-        <SwiperSlide key={i} className='relative'>
-          <img src={data} alt={`Slide ${i + 1}`} className="w-full h-[400px] object-cover" />
-          <button className='absolute left-36 bottom-16 md:left-44 bg-Amal-lightGreen px-7 py-2 rounded opacity-80 hover:bg-Amal-green'>View</button>
-        </SwiperSlide>
+        <SwiperSlide key={i} className="relative">
+        <img src={data} alt={`Slide ${i + 1}`} className="w-full h-[300px] md:h-[400px] object-cover" />
+        <button className="absolute left-1/2 transform -translate-x-1/2 bottom-4 bg-Amal-lightGreen px-7 py-2 rounded opacity-80 hover:bg-Amal-green">
+          View
+        </button>
+      </SwiperSlide>
+      
       ))}
     </Swiper>
   );

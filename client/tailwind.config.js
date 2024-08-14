@@ -7,6 +7,7 @@ export default {
   theme: {
     extend: {
       colors: {
+        'Amal-green-transparent': '#5F6A4880',
         'Amal-green': '#5F6A48',
         'Amal-ivory': '#E6DDD8',
         'Amal-lightGreen': '#5f6a48a6'
