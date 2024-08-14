@@ -3,6 +3,8 @@ import Logo from '../../assets/Header/Amal-01.png'
 import Logo1 from '../../assets/Header/Amal-07.png'
 import LogoSmall from '../../assets/Header/Amal-01.png'
 import { Bars3Icon, XMarkIcon, MagnifyingGlassIcon, ShoppingCartIcon, UserIcon, HeartIcon } from '@heroicons/react/24/outline';
+import { HiOutlineXMark, HiBars3 } from "react-icons/hi2";
+import { CiUser, CiSearch, CiShoppingCart, CiHeart } from "react-icons/ci";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,7 +40,7 @@ const Header = () => {
 
             {/* Menu Toggle (for mobile view) */}
             <button className="md:hidden p-2" onClick={() => setIsOpen(!isOpen)}>
-              {isOpen ? <XMarkIcon className="h-6 text-Amal-green md:text-white" /> : <Bars3Icon className="h-6 text-Amal-green md:text-white" />}
+              {isOpen ? <HiOutlineXMark className="text-2xl text-Amal-green md:text-white" /> : <HiBars3 className="text-2xl text-Amal-green md:text-white" />}
             </button>
            
           </div>
@@ -61,16 +63,16 @@ const Header = () => {
           {/* Right side: Icons */}
           <div className="flex items-center space-x-4">
             {/* Search Icon */}
-            <MagnifyingGlassIcon className="h-6 text-Amal-green md:text-white cursor-pointer" />
+            <CiSearch className="text-2xl text-Amal-green md:text-white cursor-pointer" />
             
             {/* Cart Icon */}
-            <ShoppingCartIcon className="h-6 text-Amal-green md:text-white cursor-pointer" />
+            <CiShoppingCart className="text-2xl text-Amal-green md:text-white cursor-pointer" />
             
             {/* User Icon */}
-            <UserIcon className="h-6 text-Amal-green md:text-white cursor-pointer" />
+            <CiUser className="text-2xl text-Amal-green md:text-white cursor-pointer" />
             
             {/* Wishlist Icon */}
-            <HeartIcon className="h-6 text-Amal-green md:text-white cursor-pointer" />
+            <CiHeart className="text-2xl text-Amal-green md:text-white cursor-pointer" />
           </div>
         </div>
 
