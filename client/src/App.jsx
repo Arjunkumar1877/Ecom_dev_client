@@ -1,9 +1,6 @@
 import { useState } from 'react';
 import './App.css';
-
-import Signup from './pages/user/SignUp';
 import Login from './pages/user/Login';
-import Header from './components/user/Header';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './styles/fonts.css'
 import LandingPage from './pages/user/LandingPage';
