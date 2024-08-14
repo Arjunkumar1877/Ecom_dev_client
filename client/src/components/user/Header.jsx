@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Logo from '../../assets/Header/Amal-01.png'
 import Logo1 from '../../assets/Header/Amal-07.png'
 import LogoSmall from '../../assets/Header/Amal-01.png'
-import { Bars3Icon, XMarkIcon, MagnifyingGlassIcon, ShoppingCartIcon, UserIcon, HeartIcon } from '@heroicons/react/24/outline';
 import { HiOutlineXMark, HiBars3 } from "react-icons/hi2";
 import { CiUser, CiSearch, CiShoppingCart, CiHeart } from "react-icons/ci";
 
@@ -10,7 +9,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="bg-gray-100">
+    <header className="fixed w-full z-50 top-0">
       {/* First Block: Logo */}
       <div className="bg-Amal-ivory py-4 hidden md:block">
         <div className="container mx-auto flex justify-center">
@@ -28,7 +27,7 @@ const Header = () => {
       </div>
 
       {/* Third Block: Logo, Navigation, and Icons */}
-      <div className="bg-Amal-ivory md:bg-Amal-green bg-opacity-80 py-4">
+      <div className="bg-Amal-ivory md:bg-Amal-green opacity-90 py-4">
         <div className="container mx-auto flex items-center justify-between">
           {/* Left side: Logo and Menu Toggle */}
           <div className="flex items-center space-x-4 md:space-x-0">

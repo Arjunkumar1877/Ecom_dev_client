@@ -11,12 +11,15 @@ import landingPageImage9 from "../../assets/Landing/landingPage9.jpeg";
 import logo from "../../assets/Landing/logo.png";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 import Header from "../../components/user/Header";
+import Swiper from "../../components/user/Swiper";
+import CustomSwiper from "../../components/user/Swiper";
 
 const LandingPage = () => {
   return (
    <>
    <Header />
-    <div className="flex flex-col gap-8 w-full h-full font-Agatho">
+   <br />
+    <div className="flex flex-col gap-8 w-full h-full font-Agatho mt-5 md:mt-[60px] ">
       {/* Hero Section */}
       <div
         className="flex h-[700px] sm:h-[500px] bg-cover bg-center bg-no-repeat"
@@ -48,24 +51,20 @@ const LandingPage = () => {
         </div>
 
         {/* Collection Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 px-4 sm:px-8 lg:px-16">
-          {[landingPageImage2, landingPageImage3, landingPageImage2].map(
-            (image, index) => (
-              <div
-                key={index}
-                className="flex flex-col gap-4 justify-end items-center p-4 h-[500px] bg-cover bg-center bg-no-repeat text-white"
-                style={{ backgroundImage: `url(${image})` }}
-              >
-                <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl">
-                  LOREM IPSUM DOLOR
-                </h2>
-                <button className="bg-Amal-green text-white px-5 py-1 mt-4 hover:bg-Amal-darkgreen transition-colors">
-                  VIEW
-                </button>
-              </div>
-            )
-          )}
+        
+    
+
+<div className="container mx-auto py-8 ">
+  <CustomSwiper
+    datas={[
+      landingPageImage2, landingPageImage3, landingPageImage2
+    ]}
+  />
+
         </div>
+
+
+
       </div>
 
       {/* Logo Section */}
@@ -101,35 +100,23 @@ const LandingPage = () => {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-          {[
-            landingPageImage5,
-            landingPageImage3,
-            landingPageImage6,
-            landingPageImage7,
-            landingPageImage8,
-          ].map((image, index) => (
-            <div key={index} className="flex flex-col">
-              <div className="flex flex-col relative">
-                <img
-                  src={image}
-                  alt={`Featured Abaya ${index + 1}`}
-                  className="w-full h-[400px] object-cover"
-                />
-                <button className="bg-Amal-lightGreen bottom-4 left-1/2 transform -translate-x-1/2 px-12 py-2 text-white absolute hover:bg-Amal-green">
-                  VIEW
-                </button>
-              </div>
-              <div className="flex py-2 flex-col justify-center items-center">
-                <p className="text-sm sm:text-md md:text-lg">
-                  Criss Cross Hija Undercap
-                </p>
-                <p className="text-red-500 text-sm sm:text-md md:text-lg">
-                  £55.00 <s className="text-black">£65.00</s>
-                </p>
-              </div>
-            </div>
-          ))}
+         
+
+<div className="container mx-auto px-4 sm:px-8 lg:px-16 pb-6 py-8 sm:w-auto">
+  <CustomSwiper
+    datas={[
+      landingPageImage5,
+      landingPageImage3,
+      landingPageImage6,
+      landingPageImage7,
+      landingPageImage8,
+    ]}
+  />
+</div>
+
         </div>
+
+
       </div>
 
       <div className="flex justify-center items-center gap-6 text-Amal-lightGreen">
