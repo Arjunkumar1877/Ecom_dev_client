@@ -20,10 +20,10 @@ const LandingPage = () => {
     <>
       <Header />
 
-      <div className="flex flex-col gap-8 w-full h-full md:-mt-16 mb-16 font-Agatho">
+      <div className="flex flex-col gap-8 w-full h-full md:-mt-[72px] overflow-hidden font-Agatho">
         {/* Hero Section */}
         <div
-          className="flex h-[700px] sm:h-[500px] bg-cover md:-mt-2 bg-center bg-no-repeat"
+          className="flex h-[700px] sm:h-[500px] bg-cover   bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${landingPageImage1})` }}
         >
           <div className="flex flex-col gap-4 mt-36 justify-center items-center w-full text-white px-4 sm:px-8 lg:px-16">

@@ -23,7 +23,7 @@ const Header = () => {
 
   return (
     <>
-    <header className=" w-full z-50 top-0 ">
+    <header className=" w-full z-50 top-0 overflow-hidden">
       {/* First Block: Logo */}
       <div className="bg-Amal-ivory py-2 hidden md:block">
         <div className="container mx-auto flex justify-center">
@@ -41,7 +41,7 @@ const Header = () => {
       </div>
 
       {/* Third Block: Logo, Navigation, and Icons */}
-      <div className="bg-Amal-ivory md:bg-Amal-green-transparent py-4 sticky top-0 z-50">
+      <div className="bg-Amal-ivory md:bg-Amal-green-transparent  py-4 sticky top-0 z-50">
         <div className="container mx-auto flex items-center justify-between">
           {/* Left Side: Logo and Menu Toggle */}
           <div className="flex items-center space-x-4 md:space-x-0">
