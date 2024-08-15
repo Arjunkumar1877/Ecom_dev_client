@@ -20,7 +20,7 @@ const LandingPage = () => {
     <>
       <Header />
 
-      <div className="flex flex-col gap-8 w-full h-full md:-mt-[72px] overflow-hidden font-Agatho">
+      <div className="flex flex-col gap-8 w-full h-full md:-mt-[72px] mb-20 overflow-hidden font-Agatho">
         {/* Hero Section */}
         <div
           className="flex h-[700px] sm:h-[500px] bg-cover   bg-center bg-no-repeat"
