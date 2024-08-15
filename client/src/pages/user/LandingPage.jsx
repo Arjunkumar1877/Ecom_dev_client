@@ -100,7 +100,7 @@ const LandingPage = () => {
             </h1>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+          
 
 
             <div className="container mx-auto px-4 sm:px-8 lg:px-16 pb-6 py-8 sm:w-auto">
@@ -115,7 +115,7 @@ const LandingPage = () => {
               />
             </div>
 
-          </div>
+          
 
 
         </div>
