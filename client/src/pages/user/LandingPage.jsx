@@ -31,7 +31,7 @@ const LandingPage = () => {
               ELEGANT FLORAL ABAYA
             </h1>
             <h4 className="text-md sm:text-lg md:text-xl lg:text-2xl text-center">
-              TIMELESS BEAUTY ON EVERY THREAD
+              TIMELESS BEAUTY ON EVERY THREAD TEST
             </h4>
             <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl cursor-pointer hover:underline">
               SHOP NOW
