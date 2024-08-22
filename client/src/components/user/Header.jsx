@@ -88,19 +88,20 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Mobile Menu */}
-        <div className={`md:hidden ${isOpen ? 'block' : 'hidden'} bg-Amal-green`}>
+       
+      </div>
+       {/* Mobile Menu */}
+       <div className={`md:hidden ${isOpen ? 'block' : 'hidden'} bg-Amal-green`}>
           <nav className="container mx-auto">
             <ul className="flex flex-col items-center space-y-4 py-4">
-              <li><a href="#home" className="text-Amal-green hover:underline">Home</a></li>
-              <li><a href="#new-arrivals" className="text-Amal-green hover:underline">New Arrivals</a></li>
-              <li><a href="#all-abayas" className="text-Amal-green hover:underline">All Abayas</a></li>
-              <li><a href="#contact-us" className="text-Amal-green hover:underline">Contact Us</a></li>
-              <li><a href="#about-us" className="text-Amal-green hover:underline">About Us</a></li>
+              <li><a href="#home" className="text-white hover:underline">Home</a></li>
+              <li><a href="#new-arrivals" className="text-white hover:underline">New Arrivals</a></li>
+              <li><a href="#all-abayas" className="text-white hover:underline">All Abayas</a></li>
+              <li><a href="#contact-us" className="text-white hover:underline">Contact Us</a></li>
+              <li><a href="#about-us" className="text-white hover:underline">About Us</a></li>
             </ul>
           </nav>
         </div>
-      </div>
     </header>
 
     <header
@@ -156,18 +157,19 @@ const Header = () => {
         </div>
 
        
-        <div className={`md:hidden ${isOpen ? 'block' : 'hidden'} bg-Amal-green`}>
+       
+      </div>
+      <div className={`md:hidden ${isOpen ? 'block' : 'hidden'} bg-Amal-green`}>
           <nav className="container mx-auto">
             <ul className="flex flex-col items-center space-y-4 py-4">
-              <li><a href="#home" className="text-Amal-green hover:underline">Home</a></li>
-              <li><a href="#new-arrivals" className="text-Amal-green hover:underline">New Arrivals</a></li>
-              <li><a href="#all-abayas" className="text-Amal-green hover:underline">All Abayas</a></li>
-              <li><a href="#contact-us" className="text-Amal-green hover:underline">Contact Us</a></li>
-              <li><a href="#about-us" className="text-Amal-green hover:underline">About Us</a></li>
+              <li><a href="#home" className="text-white hover:underline">Home</a></li>
+              <li><a href="#new-arrivals" className="text-white hover:underline">New Arrivals</a></li>
+              <li><a href="#all-abayas" className="text-white hover:underline">All Abayas</a></li>
+              <li><a href="#contact-us" className="text-white hover:underline">Contact Us</a></li>
+              <li><a href="#about-us" className="text-white hover:underline">About Us</a></li>
             </ul>
           </nav>
         </div>
-      </div>
       </header>
     </>
 

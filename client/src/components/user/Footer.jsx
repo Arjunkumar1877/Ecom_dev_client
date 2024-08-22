@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaInstagram, FaTiktok, FaPinterestP } from "react-icons/fa6";
-import Logo from '../../assets/Footer/Amal-06.png'
+import Logo from '../../assets/Footer/Amal-01.png'
 import visa from '../../assets/Footer/visa.png'
 import mastercard from '../../assets/Footer/master_card.png'
 import maestro from '../../assets/Footer/maestro.png'

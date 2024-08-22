@@ -102,6 +102,7 @@ const LandingPage = () => {
 
           
 
+<div>
 
             <div className="container mx-auto px-4 sm:px-8 lg:px-16 pb-6 py-8 sm:w-auto">
               <CustomSwiper
@@ -114,6 +115,7 @@ const LandingPage = () => {
                 ]}
               />
             </div>
+</div>
 
           
 
