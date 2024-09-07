@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './../../styles/fonts.css';
+import { signInWithGoogle } from '../../config/firebase';
 
 function LoginPage() {
 
@@ -15,6 +16,13 @@ function LoginPage() {
             [name]: value,
         });
     };
+
+    const handleGoogleLogin = async () => {
+        const user = await signInWithGoogle();
+        if(user){
+            console.log("User logged in:", user)
+        }
+    }
 
     const handleSubmit = (e) => {
         e.preventDefault();
