@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import './App.css';
 import Login from './pages/user/Login';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
@@ -8,7 +7,7 @@ import Signup from './pages/user/SignUp';
 
 
 function App() {
-  const [count, setCount] = useState(0)
+ 
 
   return (
  <BrowserRouter>

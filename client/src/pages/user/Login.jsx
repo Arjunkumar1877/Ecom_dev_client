@@ -92,7 +92,7 @@ function LoginPage() {
                         </div>
 
                     </form>
-                    <div class="flex items-center justify-center mt-10  ">
+                    <div className="flex items-center justify-center mt-10  ">
                        <OAuth/>
                     </div>
                 </div>
