@@ -51,7 +51,7 @@ const Footer = () => {
 
                 {/* Third Horizontal Div */}
                 <div className="w-full md:w-1/3 hidden md:flex justify-center items-center">
-                    <img src={Logo} alt="Amal Logo" className='w-72' />
+                    <img src={Logo} alt="Amal Logo" className='w-60' />
                 </div>
 
             </div>

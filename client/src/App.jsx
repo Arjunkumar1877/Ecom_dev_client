@@ -4,6 +4,7 @@ import Login from './pages/user/Login';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './styles/fonts.css'
 import LandingPage from './pages/user/LandingPage';
+import Signup from './pages/user/SignUp';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
    <Routes>
     <Route path='/' element={<LandingPage />} />
     <Route path='/login' element={<Login />} />
+    <Route path='/signup' element={<Signup />} />
 
    </Routes>
  </BrowserRouter>
